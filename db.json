@@ -1,0 +1,17 @@
+{
+  "todos": [
+    {
+      "description": "New todo",
+      "due_date": "123444",
+      "created_by": "anonymous",
+      "id": "fd5ddc78-9772-4907-8d72-2fa379af9a0b"
+    },
+    {
+      "description": "New todo",
+      "due_date": "123444",
+      "created_by": "anonymous",
+      "id": "ba9f749b-fb25-4eed-8a3b-9a684484dbc1"
+    }
+  ],
+  "users": []
+}
