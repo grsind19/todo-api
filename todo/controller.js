@@ -3,7 +3,7 @@ const { db } = require('../config/db')
 module.exports.create_todo = function (req, res, next) {
     try {
         const todo = req.body;
-        todo.created_by = req.user ? req.user.id : 'anonymous';
+        todo.created_by = req.user ? req.user.email : 'anonymous';
         todo.is_completed = false;
         todo.id = UUID()
         db.get('todos')
@@ -18,10 +18,10 @@ module.exports.create_todo = function (req, res, next) {
 module.exports.get_todo = function (req, res, next) {
     let todos = []
     if (req.params && req.params.id) {
-        todo = db.get('todos').find({ id: req.params.id }).value()
+        todo = db.get('todos').find({ id: req.params.id, email: req.user.email}).value()
         if (todo) { todos.push(todo) }
     } else {
-        todos = db.get('todos').value()
+        todos = db.get('todos').find({email: req.user.email }).value()
     }
     res.status(200).send(todos)
 }

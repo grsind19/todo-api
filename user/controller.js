@@ -34,7 +34,7 @@ module.exports.sign_in = function (req, res, next) {
             bcrypt.compare(user.password, existing_user.password, function (err, result) {
                 if (result) {
                     const expiresIn = 24 * 60 * 60;
-                    const accessToken = jwt.sign({ id: user.email }, SECRET_KEY, {
+                    const accessToken = jwt.sign({ email: user.email }, SECRET_KEY, {
                         expiresIn: expiresIn
                     });
                     res.status(201).send({

@@ -4,6 +4,7 @@ const body_parser = require('body-parser')
 const helmet = require('helmet')
 const cors = require('cors')
 const database = require('./config/db')
+const auth = require('./config/auth')
 
 const PORT = process.env.NODE_ENV || 3000;
 
@@ -19,9 +20,10 @@ app.use(cors())
 database.initialise()
 
 
+
 const todo_route = require('./todo/routes')
 const user_route = require('./user/routes')
-app.use('/api/todo', todo_route)
+app.use('/api/todo', auth.verify_token,  todo_route)
 app.use('/api/user', user_route)
 
 app.listen(PORT, () => {
