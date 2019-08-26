@@ -5,7 +5,27 @@
       "due_date": "123444",
       "created_by": "anonymous",
       "id": "ba9f749b-fb25-4eed-8a3b-9a684484dbc1"
+    },
+    {
+      "description": "New todo",
+      "due_date": "123444",
+      "created_by": "anonymous",
+      "is_completed": false,
+      "id": "b2be7d06-110a-4144-a4e0-99e472ffad40"
+    },
+    {
+      "description": "New todo",
+      "due_date": "123444",
+      "created_by": "anonymous",
+      "is_completed": false,
+      "id": "21985542-e5b1-47cb-aa8d-3119af9b9de6"
     }
   ],
-  "users": []
+  "users": [
+    {
+      "email": "grsind19@gmail.com",
+      "password": "$2a$10$gpjyoip4nSvTE6s05MwSEu7J/AbEk/hBPIxxu1zsLRDo1mOMn4diG",
+      "id": "eb34036a-9f55-4621-b542-a3d33a06636a"
+    }
+  ]
 }

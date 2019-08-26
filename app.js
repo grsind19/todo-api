@@ -20,7 +20,9 @@ database.initialise()
 
 
 const todo_route = require('./todo/routes')
-app.use('/api', todo_route)
+const user_route = require('./user/routes')
+app.use('/api/todo', todo_route)
+app.use('/api/user', user_route)
 
 app.listen(PORT, () => {
     console.log(`todo api has started in ${PORT}`)
