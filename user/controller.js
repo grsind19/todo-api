@@ -41,7 +41,7 @@ module.exports.sign_in = function (req, res, next) {
                         "user": user, "access_token": accessToken, "expires_in": expiresIn
                     });
                 } else {
-                    return res.status(500).send({ status: 'failure', message: 'User not found' })
+                    return res.status(500).send({ status: 'failure', message: 'Invalid credentials' })
                 }
             });
         } else {
