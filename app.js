@@ -6,7 +6,8 @@ const cors = require('cors')
 const database = require('./config/db')
 const auth = require('./config/auth')
 
-const PORT = process.env.NODE_ENV || 3000;
+//const PORT = process.env.NODE_ENV || 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(body_parser.urlencoded({
     extended: true
