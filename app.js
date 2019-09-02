@@ -19,6 +19,8 @@ app.use(cors())
 
 database.initialise()
 
+app.use(express.static('tod-app-ui'))
+
 
 
 const todo_route = require('./todo/routes')

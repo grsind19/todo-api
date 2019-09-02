@@ -34,18 +34,31 @@
       "id": "ed877b13-f6f6-4c8f-869d-bf424a7e9d7c"
     },
     {
-      "title": "xvzdxvs",
+      "title": "I hate you",
+      "completed": true,
+      "is_completed": false,
+      "id": "8ab87dba-19f0-40e1-ba81-d814e96c99ef"
+    },
+    {
+      "title": "ABC todo list",
       "completed": false,
       "created_by": "abc@gmail.com",
       "is_completed": false,
-      "id": "0bd0a409-490a-4765-9a69-06e3b1c30345"
+      "id": "0b7e1e8a-f24f-47d8-a426-f892aa27fde6"
     },
     {
-      "title": "xzvzvzv",
+      "title": "One two three",
       "completed": true,
       "created_by": "abc@gmail.com",
       "is_completed": false,
-      "id": "16123d34-a064-41eb-af36-cfcec965e77d"
+      "id": "c2773903-1205-4093-b6ab-65952674f002"
+    },
+    {
+      "title": "ABCD Todos",
+      "completed": true,
+      "created_by": "abcd@gmail.com",
+      "is_completed": false,
+      "id": "dd233437-2b4a-45ef-a6dc-825946b82d9a"
     }
   ],
   "users": [
@@ -63,6 +76,11 @@
       "email": "abc@gmail.com",
       "password": "$2a$10$TnIqj5MLedYAISLW2pg2YuTJcLQ0TClSHKnrvSt92dOBQzonSNZIm",
       "id": "043f8d1f-8603-4bd2-a67e-d1b8844f4c9f"
+    },
+    {
+      "email": "abcd@gmail.com",
+      "password": "$2a$10$RMCnBjIpMkp6yAwjq2p7nueoATa1dwoBfNJMMdTXBwkS91ojDw11G",
+      "id": "258035ef-8e43-45de-8050-c90dc18a95da"
     }
   ]
 }
